@@ -20,7 +20,7 @@ class Day12 {
         while (s.hasNextLine()) {
             List<Integer> line = new ArrayList<>();
             for (char c : s.nextLine().toCharArray()) {
-                line.add((int)c);
+                line.add(Character.getNumericValue(c));
             }
             input.add(line);
         }
